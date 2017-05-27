@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPaginationWindow should create a window with 1 page if total is zero 1`] = `
+Array [
+  Object {
+    "direction": "previous",
+    "isCurrent": false,
+    "isDisabled": true,
+    "key": "navigation-previous",
+    "number": 1,
+    "offset": 0,
+    "type": "navigation",
+  },
+  Object {
+    "isCurrent": true,
+    "isDisabled": false,
+    "key": "page-1",
+    "number": 1,
+    "offset": 0,
+    "type": "page",
+  },
+  Object {
+    "direction": "next",
+    "isCurrent": false,
+    "isDisabled": true,
+    "key": "navigation-next",
+    "number": 1,
+    "offset": 0,
+    "type": "navigation",
+  },
+]
+`;
+
+exports[`getPaginationWindow should create a window with ellipses 1`] = `
+Array [
+  Object {
+    "direction": "previous",
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "navigation-previous",
+    "number": 4,
+    "offset": 30,
+    "type": "navigation",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-1",
+    "number": 1,
+    "offset": 0,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": true,
+    "key": "ellipsis-front",
+    "type": "ellipsis",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-3",
+    "number": 3,
+    "offset": 20,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-4",
+    "number": 4,
+    "offset": 30,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": true,
+    "isDisabled": false,
+    "key": "page-5",
+    "number": 5,
+    "offset": 40,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-6",
+    "number": 6,
+    "offset": 50,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-7",
+    "number": 7,
+    "offset": 60,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": true,
+    "key": "ellipsis-back",
+    "type": "ellipsis",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-9",
+    "number": 9,
+    "offset": 80,
+    "type": "page",
+  },
+  Object {
+    "direction": "next",
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "navigation-next",
+    "number": 6,
+    "offset": 50,
+    "type": "navigation",
+  },
+]
+`;
+
+exports[`getPaginationWindow should create a window without ellipses 1`] = `
+Array [
+  Object {
+    "direction": "previous",
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "navigation-previous",
+    "number": 4,
+    "offset": 30,
+    "type": "navigation",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-1",
+    "number": 1,
+    "offset": 0,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-2",
+    "number": 2,
+    "offset": 10,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-3",
+    "number": 3,
+    "offset": 20,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": false,
+    "isDisabled": false,
+    "key": "page-4",
+    "number": 4,
+    "offset": 30,
+    "type": "page",
+  },
+  Object {
+    "isCurrent": true,
+    "isDisabled": false,
+    "key": "page-5",
+    "number": 5,
+    "offset": 40,
+    "type": "page",
+  },
+  Object {
+    "direction": "next",
+    "isCurrent": false,
+    "isDisabled": true,
+    "key": "navigation-next",
+    "number": 5,
+    "offset": 40,
+    "type": "navigation",
+  },
+]
+`;

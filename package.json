@@ -2,8 +2,8 @@
   "name": "pagination-window",
   "version": "1.0.0",
   "description": "Create a window of pages for populating a pagination control.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Zeff Svoboda",
   "repository": "AlteredConstants/pagination-window",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "build": "tsc",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "format": "prettier --parser typescript --trailing-comma all --write index.ts"
+    "format": "prettier --parser typescript --trailing-comma all --write src/*.ts"
   },
   "devDependencies": {
     "@types/jest": "^19.2.3",

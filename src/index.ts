@@ -1,14 +1,17 @@
 import getWindow from "./getWindow";
 import { Window } from "./createItem";
 
+/** The configuration for generating a pagination window. */
 export interface Config {
+  /** The position in the list around which to create the window. */
   offset: number;
+  /** The number of items displayed per page. */
   limit: number;
+  /** The total number of items in the list. */
   total: number;
 }
 
-type ValidatedConfig = Config | false;
-function validateConfig(config: Config): ValidatedConfig {
+function validateConfig(config: Config): Config | false {
   if (!config || typeof config !== "object") {
     return false;
   }
@@ -26,6 +29,10 @@ function validateConfig(config: Config): ValidatedConfig {
   return config;
 }
 
+/**
+ * Generates a bounded window into a list of items for pagination.
+ * @param config The configuration for generating a pagination window.
+ */
 export default function getPaginationWindow(config: Config): Window | null {
   const result = validateConfig(config);
   if (!result) {

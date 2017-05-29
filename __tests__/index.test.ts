@@ -1,9 +1,5 @@
 import getPaginationWindow from "../src/index";
 
-function getConfig({ offset = 0, limit = 10, total = 50 }) {
-  return { offset, limit, total };
-}
-
 describe("getPaginationWindow", () => {
   it("should return null if no config object is provided", () => {
     const windows = {

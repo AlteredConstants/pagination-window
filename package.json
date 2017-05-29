@@ -1,6 +1,6 @@
 {
   "name": "pagination-window",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A window into a pagination list",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

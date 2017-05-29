@@ -22,7 +22,8 @@ function validateConfig(config: Config): Config | false {
     typeof total !== "number" ||
     offset < 0 ||
     limit < 1 ||
-    total < 0
+    total < 0 ||
+    offset >= total
   ) {
     return false;
   }

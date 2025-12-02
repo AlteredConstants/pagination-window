@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`getPaginationWindow should create a window with ellipses 1`] = `
-Array [
-  Object {
+[
+  {
     "direction": "previous",
     "isDisabled": false,
     "key": "navigation-previous",
@@ -10,7 +10,7 @@ Array [
     "offset": 30,
     "type": "navigation",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-1",
@@ -18,12 +18,12 @@ Array [
     "offset": 0,
     "type": "page",
   },
-  Object {
+  {
     "isDisabled": true,
     "key": "ellipsis-front",
     "type": "ellipsis",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-3",
@@ -31,7 +31,7 @@ Array [
     "offset": 20,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-4",
@@ -39,7 +39,7 @@ Array [
     "offset": 30,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": true,
     "isDisabled": false,
     "key": "page-5",
@@ -47,7 +47,7 @@ Array [
     "offset": 40,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-6",
@@ -55,7 +55,7 @@ Array [
     "offset": 50,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-7",
@@ -63,12 +63,12 @@ Array [
     "offset": 60,
     "type": "page",
   },
-  Object {
+  {
     "isDisabled": true,
     "key": "ellipsis-back",
     "type": "ellipsis",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-9",
@@ -76,7 +76,7 @@ Array [
     "offset": 80,
     "type": "page",
   },
-  Object {
+  {
     "direction": "next",
     "isDisabled": false,
     "key": "navigation-next",
@@ -88,8 +88,8 @@ Array [
 `;
 
 exports[`getPaginationWindow should create a window without ellipses 1`] = `
-Array [
-  Object {
+[
+  {
     "direction": "previous",
     "isDisabled": false,
     "key": "navigation-previous",
@@ -97,7 +97,7 @@ Array [
     "offset": 30,
     "type": "navigation",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-1",
@@ -105,7 +105,7 @@ Array [
     "offset": 0,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-2",
@@ -113,7 +113,7 @@ Array [
     "offset": 10,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-3",
@@ -121,7 +121,7 @@ Array [
     "offset": 20,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": false,
     "isDisabled": false,
     "key": "page-4",
@@ -129,7 +129,7 @@ Array [
     "offset": 30,
     "type": "page",
   },
-  Object {
+  {
     "isCurrent": true,
     "isDisabled": false,
     "key": "page-5",
@@ -137,7 +137,7 @@ Array [
     "offset": 40,
     "type": "page",
   },
-  Object {
+  {
     "direction": "next",
     "isDisabled": true,
     "key": "navigation-next",

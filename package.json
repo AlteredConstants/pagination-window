@@ -13,19 +13,18 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
-    "test": "jest --config jestconfig.json",
+    "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "test:clean": "npm run clean && npm run build && npm run test",
-    "format": "prettier --parser typescript --trailing-comma all --write src/*.ts",
-    "prepublish": "npm run test:clean"
+    "format": "prettier --write .",
+    "prepack": "npm run clean && npm run test && npm run build"
   },
   "devDependencies": {
-    "@types/jest": "^19.2.3",
-    "jest": "^20.0.4",
-    "prettier": "prettier/prettier#044a58bb6f03dedc56d7be2c37760b25d03f1c05",
-    "rimraf": "^2.6.1",
-    "ts-jest": "^20.0.4",
-    "typescript": "^2.3.3",
-    "typescript-eslint-parser": "eslint/typescript-eslint-parser#31ad3c4c3e59ad3290aeb1a04d8f2683de55fbde"
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.19.1",
+    "jest": "^30.2.0",
+    "prettier": "3.7.3",
+    "rimraf": "^6.1.2",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
   }
 }

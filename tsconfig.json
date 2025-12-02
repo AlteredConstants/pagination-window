@@ -5,9 +5,7 @@
     "target": "es5",
     "declaration": true,
     "outDir": "dist",
-    "newLine": "LF"
+    "newLine": "lf"
   },
-  "include": [
-    "src/*"
-  ]
+  "include": ["src/*"]
 }

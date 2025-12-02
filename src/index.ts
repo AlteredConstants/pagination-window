@@ -40,11 +40,7 @@ export default function getPaginationWindow(config: Config): Window | null {
     return null;
   }
   const { offset, limit, total } = result;
-  const first = 1;
   const last = Math.max(Math.ceil(total / limit), 1);
   const current = Math.floor(offset / limit) + 1;
-  const previous = Math.max(current - 1, first);
-  const next = Math.min(current + 1, last);
-  const getOffset = (number: number) => (number - 1) * limit;
   return getWindow(limit, current, last);
 }

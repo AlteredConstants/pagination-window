@@ -1,30 +1,35 @@
 {
-  "name": "pagination-window",
-  "version": "1.0.2",
-  "description": "A window into a pagination list",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "Zeff Svoboda",
-  "repository": "AlteredConstants/pagination-window",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "clean": "rimraf dist",
-    "build": "tsc",
-    "test": "jest",
-    "test:watch": "npm run test -- --watch",
-    "format": "prettier --write .",
-    "prepack": "npm run clean && npm run test && npm run build"
-  },
-  "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "@types/node": "^22.19.1",
-    "jest": "^30.2.0",
-    "prettier": "3.7.3",
-    "rimraf": "^6.1.2",
-    "ts-jest": "^29.4.6",
-    "typescript": "^5.9.3"
-  }
+	"name": "pagination-window",
+	"version": "1.0.2",
+	"description": "A window into a pagination list",
+	"author": "Zeff Svoboda",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AlteredConstants/pagination-window.git"
+	},
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"clean": "rimraf dist",
+		"build": "tsgo",
+		"test": "bun test",
+		"test:watch": "bun run test --watch",
+		"format": "prettier --write .",
+		"prepack": "bun run --sequential clean test build"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@typescript/native-preview": "^7.0.0-dev.20260428.1",
+		"prettier": "3.8.3",
+		"rimraf": "^6.1.3"
+	}
 }

@@ -14,29 +14,30 @@ import React from "react";
 import getPaginationWindow from "pagination-window";
 
 export default function PaginationControl({ offset, limit, total }) {
-  return (
-    <div>
-      {getPaginationWindow({ offset, limit, total }).map((page) => {
-        if (page.type === "ellipsis") {
-          return <span key={page.key}>...</span>;
-        }
-        const link = !page.isDisabled
-          ? `?offset=${page.offset}&limit=${limit}`
-          : undefined;
-        const border = page.isCurrent ? "1px solid black" : undefined;
-        const style = { display: "inline-block", padding: "0.3em", border };
-        return (
-          <a key={page.key} href={link} style={style}>
-            {page.type === "page"
-              ? page.number
-              : page.direction === "previous"
-                ? "<<"
-                : ">>"}
-          </a>
-        );
-      })}
-    </div>
-  );
+	return (
+		<div>
+			{getPaginationWindow({ offset, limit, total }).map((page) => {
+				if (page.type === "ellipsis") {
+					return <span key={page.key}>...</span>;
+				}
+				const link =
+					!page.isDisabled ?
+						`?offset=${page.offset}&limit=${limit}`
+					:	undefined;
+				const border = page.isCurrent ? "1px solid black" : undefined;
+				const style = { display: "inline-block", padding: "0.3em", border };
+				return (
+					<a key={page.key} href={link} style={style}>
+						{page.type === "page" ?
+							page.number
+						: page.direction === "previous" ?
+							"<<"
+						:	">>"}
+					</a>
+				);
+			})}
+		</div>
+	);
 }
 ```
 
@@ -50,38 +51,38 @@ const config = { offset: 0, limit: 10, total: 20 };
 getPaginationWindow(config);
 // Result:
 [
-  {
-    type: "navigation",
-    key: "navigation-previous",
-    isDisabled: true,
-    direction: "previous",
-    number: 1,
-    offset: 0,
-  },
-  {
-    type: "page",
-    key: "page-1",
-    isDisabled: false,
-    isCurrent: true,
-    number: 1,
-    offset: 0,
-  },
-  {
-    type: "page",
-    key: "page-2",
-    isDisabled: false,
-    isCurrent: false,
-    number: 2,
-    offset: 10,
-  },
-  {
-    type: "navigation",
-    key: "navigation-next",
-    direction: "next",
-    isDisabled: false,
-    number: 2,
-    offset: 10,
-  },
+	{
+		type: "navigation",
+		key: "navigation-previous",
+		isDisabled: true,
+		direction: "previous",
+		number: 1,
+		offset: 0,
+	},
+	{
+		type: "page",
+		key: "page-1",
+		isDisabled: false,
+		isCurrent: true,
+		number: 1,
+		offset: 0,
+	},
+	{
+		type: "page",
+		key: "page-2",
+		isDisabled: false,
+		isCurrent: false,
+		number: 2,
+		offset: 10,
+	},
+	{
+		type: "navigation",
+		key: "navigation-next",
+		direction: "next",
+		isDisabled: false,
+		number: 2,
+		offset: 10,
+	},
 ];
 ```
 

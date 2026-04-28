@@ -1,0 +1,6 @@
+{
+	"experimentalOperatorPosition": "start",
+	"experimentalTernaries": true,
+	"objectWrap": "collapse",
+	"useTabs": true
+}

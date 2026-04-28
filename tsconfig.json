@@ -1,11 +1,17 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "module": "commonjs",
-    "target": "es5",
-    "declaration": true,
-    "outDir": "dist",
-    "newLine": "lf"
-  },
-  "include": ["src/*"]
+	"compilerOptions": {
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"target": "es2015",
+		"types": ["bun"],
+		"declaration": true,
+		"outDir": "./dist",
+		"rootDir": "./src"
+	},
+	"include": ["./src"]
 }
